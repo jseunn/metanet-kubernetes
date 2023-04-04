@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+# 어떤 정보?
+metadata:
+  name: echo
+  labels:
+    app: echo
+spec:
+  containers:
+    - name: app
+      image: dolsam77/echo
+      

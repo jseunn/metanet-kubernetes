@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+# 어떤 정보?
+metadata:
+  name: counter
+  labels:
+    app: counter
+spec:
+  containers:
+    - name: app
+      image: dolsam77/counter
+      env:
+        - name: REDiS_HOST
+          value: "localhost"
+    - name: db
+      image: redis
+      
