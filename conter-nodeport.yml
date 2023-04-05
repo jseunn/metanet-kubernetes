@@ -8,7 +8,6 @@ spec:
     - port: 3000
       protocol: TCP
       nodePort: 31000
-    selector:
-      app: couter
-      tier: app
-      
+  selector:
+    app: couter
+    tier: app
