@@ -4,7 +4,7 @@ metadata:
   name: echo-v1
 spec:
   rules:
-    - host: v1.echo.172.28.73.205.sslip.io
+    - host: v1.echo.117.30.60.110.sslip.io
       http:
         paths:
           - path: /
