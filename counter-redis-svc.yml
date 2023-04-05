@@ -16,19 +16,19 @@ spec:
       containers:
         - name: redis
           image: redis
-          port:
-            - contanerPort: 6379
+          ports:
+            - containerPort: 6379
               protocol: TCP
 
 ---
-apiVersion: 
+apiVersion: v1
 kind: Service
 metadata:
   name: redis
 spec:
   ports:
     - port: 6379
-      protocal: TCP
+      protocol: TCP
   selector:
     app: counter
     tier: db
