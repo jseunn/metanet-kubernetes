@@ -19,3 +19,16 @@ spec:
           port:
             - contanerPort: 6379
               protocol: TCP
+
+---
+apiVersion: 
+kind: Service
+metadata:
+  name: redis
+spec:
+  ports:
+    - port: 6379
+      protocal: TCP
+  selector:
+    app: counter
+    tier: db
